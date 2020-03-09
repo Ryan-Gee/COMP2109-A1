@@ -1,0 +1,220 @@
+/*
+Theme Name: Subsurface
+Author: Ryan Gee
+*/
+@import url('https://fonts.googleapis.com/css?family=Abel|Lato&display=swap');
+
+html {
+    background-color: black;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0px;
+    font-family: 'Lato', sans-serif;
+}
+
+.menu-primary {
+    background-color: black;
+    width: 100%;
+    padding: 20px;
+    font-family: 'Abel', sans-serif;
+    box-shadow: 0px 0px 10px black;
+}
+
+.menu-primary ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 21pt;
+}
+
+.menu-primary ul::before {
+    display: block;
+    background-image: url('./refs/img/logo.png');
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    left: 10px;
+    top: 10px;
+    content: "";
+    margin-right: 10px;
+    position: relative;
+    left: -30px;
+    top: -10px;
+}
+
+.menu-primary ul li {
+    list-style-type: none;
+    margin-right: 30px;
+}
+
+.menu-primary ul {
+    display: flex;
+}
+
+header {
+    color: white;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.header-bg, .header-bg-err, .header-bg-music, .header-bg-contact {
+    position: absolute;
+    width: 100%;
+    z-index: -10;
+    background-image: url('/wordpress/wp-content/themes/Subsurface/refs/img/header.jpg');
+    background-size: cover;
+    height: 524px;
+    filter: grayscale(1) brightness(0.2);
+}
+
+.header-bg-err {
+    background-image: url('/wordpress/wp-content/themes/Subsurface/refs/img/glitch.jpg');
+}
+
+.header-bg-contact {
+    background-image: url('/wordpress/wp-content/themes/Subsurface/refs/img/contact.jpg');
+}
+
+.pum-title.popmake-title {
+    font-family: 'Abel', sans-serif;
+    font-size: 32pt;
+}
+
+.pum-content.popmake-content {
+    line-height: 150%;
+    font-size: 14pt;
+    padding-top: 30px;
+}
+
+header h1 {
+    font-family: 'Abel', sans-serif;
+    font-size: 80px;
+    margin: 0px;
+    padding-top: 100px;
+}
+
+h3 {
+    font-weight: lighter;
+}
+
+header button {
+    margin-top: 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: transparent;
+    font-size: 20px;
+    padding: 10px 30px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+header button a {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+header button:hover {
+    background-color: white;
+}
+
+header button:hover a {
+    color: black;
+}
+
+form {
+    width: 40vw;
+    margin: 30px 30vw;
+}
+
+form input, form textarea {
+    border: none;
+    font-size: 16pt;
+    background-color: white;
+    padding: 10px;
+    font-family: 'Lato', sans-serif;
+    display: block;
+    width: 100%;
+    margin: 10px;
+}
+
+.album-card {
+    width: 300px;
+    background-color: #222;
+    margin-bottom: 50px;
+    margin: 20px;
+    flex: 1;
+}
+
+.album-card img {
+    width: 80%;
+    height: auto;
+    margin: 0% 10%;
+}
+
+#album-body a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.album-card h2 {
+    padding-top: 20px;
+    display: block;
+}
+
+.album-card p {
+    padding: 10px 30px;
+    padding-bottom: 30px;
+    color: white;
+    font-size: 12pt;
+    display: block;
+}
+
+#album-body {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+.thumbnail-header img {
+    width: 400px;
+    height: auto;
+    position: absolute;
+    left: calc(50vw - 200px);
+    top: 180px;
+    z-index: -10;
+}
+
+.album-single h1 {
+    padding-top: 250px;
+    text-shadow: 0px 0px 30px black;
+}
+
+.album-single p {
+    text-shadow: 0px 0px 20px black, 0px 0px 10px black;
+}
+
+.album-single h1 {
+    text-shadow: 0px 0px 30px black, 0px 0px 20px black;
+}
+
+.gradient-black {
+    position: absolute;
+    z-index: -5;
+    height: 10px;
+    background-color: black;
+    width: 100vw;
+    bottom: 0px;
+    box-shadow: 0px 0px 300px 200px black;
+}
+
+footer {
+    margin-top: 50px;
+    padding: 40px;
+    background-color: #111;
+    color: white;
+}
